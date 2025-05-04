@@ -1,0 +1,16 @@
+services:
+  postgres_stock:
+    image: postgres:15
+    container_name: postgres_stock
+    restart: no
+    environment:
+      POSTGRES_USER: stocks
+      POSTGRES_PASSWORD: stocks
+      POSTGRES_DB: stock_api_database
+    ports:
+      - "5433:5432"  # Exposing on a different port to avoid conflict
+    volumes:
+      - postgres_stock_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_stock_data:
