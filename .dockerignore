@@ -6,3 +6,44 @@ logs/
 .venv
 airflow.db
 airflow.cfg
+
+
+
+
+# Mac system files
+.DS_Store
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+
+# Airflow logs or data
+logs/
+dags/__pycache__/
+
+# Local env or secrets
+.env
+.env.*
+
+# Data files
+*.csv
+*.parquet
+*.json
+*.db
+
+# Jupyter or notebook outputs (if any)
+*.ipynb_checkpoints/
+
+# Astro's default files that don’t need to be copied
+.include/
+tests/
+.git/
+.gitignore
+.dockerignore
