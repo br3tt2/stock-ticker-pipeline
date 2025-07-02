@@ -23,3 +23,5 @@ airflow.db
 local_airflow/venv/
 .dbt/
 dbt_packages/
+
+developer_notes.txt
